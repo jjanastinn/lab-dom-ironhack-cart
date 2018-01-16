@@ -35,44 +35,9 @@ function deleteItem(e){
 
 
 
-// TOTAL PRICE
-// var price = shoppingCart.reduce(function(acc, item) {
-//   return acc + item.price;
-// }, 0)
-// var result = document.getElementByID("result");
-// result.innerText = price;
-
-
-
-// NEW ITEM
-// function createNewItem(newProduct){
-//   shoppingCart.push(product);
-// }
-
-// var newProduct = new Product("IronBubble-head", " ", 15);
-
-// War.prototype.addViking = function (vikingSoldier){
-//   War.vikingArmy.push(vikingSoldier);
-// }
-
-// var people = ['Andre', 'Byron', 'Eloi'];
-
-// people.forEach(function (name) {
-//   var myCard = createCard(name);
-//   document.body.appendChild(myCard);
-// });
-
-
-
-
 function createQuantityInput(){
 
 }
-
-
-
-
-
 
 function createDeleteButton(){
 
@@ -103,3 +68,43 @@ window.onload = function(){
     deleteButtons[i].onclick = deleteItem;
   }
 };
+
+
+// UPDATE PRICE SOLUTION 
+// var products = document.querySelectorAlle('.product');
+// for loop ... 
+
+// Solution 1:
+// var product = products[x];
+// var priceElement = product.query..
+// var price = Number(priceElement.innerText);
+
+// Solution 2:
+// var price = products[x].querySelector('.price').innerText;
+
+
+// CREATE ELEMENT
+// var newDiv = document.createElement('div');
+// newDiv.innerText = "Hi I'm a DIV";
+// newDiv.classList.add('foobar');
+// var wrapperList = document.querySelector('.wrapper-list');
+
+// wrapperList.appendChild(newDiv); || 
+// wrapperList.prependChild(newDiv); || 
+// var productList = document.querySelectorAll('.wrapper-list')
+// var products = document.querySelector('.product-list-item')
+// productList.insertBefore(newDiv, products[1]);
+
+
+// MOUSE EVENT
+// var title = document.querySelectorAll('h1')
+// title.addEventListener('click', function(event) {
+//  console.log(event);
+//})
+
+// KEYBOARD EVENT
+// function handleTypingOnInput(event) {
+//  console.log(event)
+//}
+// var inputValue = documment.querySelectorAll('.create-product input')[1]
+// inputValue.addEventListener('keydown', handleTypingOnInput);
